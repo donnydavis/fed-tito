@@ -14,5 +14,3 @@ FROM fedora:latest
 MAINTAINER Donny Davis <donny@fortnebula.com>
 
 RUN dnf -y install tito golang ansible; dnf -y update; dnf clean all
-
-CMD ["/bin/bash"]
