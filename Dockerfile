@@ -13,9 +13,6 @@
 FROM fedora:latest
 MAINTAINER Donny Davis <donny@fortnebula.com>
 
-RUN dnf -y install tito; dnf -y update; dnf clean all
-
-# fundamental packages
-RUN dnf -y install file gcc make man sudo tar; dnf clean all
+RUN dnf -y install tito golang ansible; dnf -y update; dnf clean all
 
 CMD ["/bin/bash"]
