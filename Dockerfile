@@ -13,4 +13,4 @@
 FROM fedora:latest
 MAINTAINER Donny Davis <donny@fortnebula.com>
 
-RUN dnf -y install tito golang ansible; dnf -y update; dnf clean all
+RUN dnf -y install tito golang ansible bsdtar krb5-devel; dnf -y update; dnf clean all
